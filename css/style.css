@@ -190,14 +190,14 @@ body {
   }
   #header .container .navBar .ulContainer {
     margin-top: 3rem;
-    margin-left: -16rem;
+    margin-left: -10rem;
     display: none;
   }
   #header .container .navBar .ulContainer ul {
     display: block;
   }
   #header .container .navBar .ulContainer ul li {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   #header .container .navBar .active-ul {
     display: block;
