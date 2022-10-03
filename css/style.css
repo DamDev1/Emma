@@ -24,88 +24,108 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#header .navBar {
+#header .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .container .navBar {
+  padding: 2rem;
+  display: flex;
+}
+#header .container .navBar .toggle {
+  display: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+#header .container .navBar .toggle:hover {
+  background: white;
+  color: black;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+#header .container .navBar .ulContainer ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
 }
-#header .navBar ul {
-  display: flex;
-  font-family: var(--montrserrat);
-}
-#header .navBar ul li {
-  margin-left: 2rem;
+#header .container .navBar .ulContainer ul li {
   list-style: none;
-  font-weight: 200;
+  margin-left: 2rem;
+}
+#header .container .navBar .ulContainer ul li a {
+  text-decoration: none;
+  font-family: var(--font_robot);
+  color: white;
   font-size: 15px;
 }
-#header .navBar ul li a {
-  text-decoration: none;
-  color: white;
+#header .container .navBar .ulContainer ul li a:hover {
+  opacity: 0.5;
 }
-#header .navBar .toggle {
-  display: none;
+#header .active-container {
+  background: white;
+  position: fixed;
+  width: 100%;
 }
-#header .details {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-}
-#header .details .text {
-  text-align: center;
-}
-#header .details .text p {
-  color: white;
-  font-family: var(--font_robot);
-  font-size: 30px;
-  font-weight: 300;
-}
-#header .details .text h1 {
-  margin-top: 0.2rem;
-  font-family: var(--font_robot);
-  color: white;
-  font-size: 60px;
-  letter-spacing: 10px;
-}
-#header .details .text p:nth-child(3) {
-  font-size: 18px;
-}
-#header .scrolldown {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -2rem;
-}
-#header .scrolldown a .ballContainer {
-  width: 2rem;
-  background: none;
+#header .active-container .navBar .toggle {
+  color: black;
   border: 1px solid black;
-  height: 3rem;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  position: relative;
 }
-#header .scrolldown a .ballContainer .ball {
+#header .active-container .navBar .toggle:hover {
+  background: black;
+  color: white;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+#header .active-container .navBar .ulContainer ul li a {
+  color: black;
+}
+#header .scroll {
   position: absolute;
-  bottom: 2px;
-  left: 4px;
+  bottom: 1.5rem;
+  left: 50%;
+}
+#header .scroll .scrollContainer {
+  width: 2rem;
+  height: 3rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#header .scroll .scrollContainer .ball {
   width: 1.5rem;
   height: 1.5rem;
-  background: black;
+  background: white;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  bottom: 4px;
 }
 
 #protfolio {
   margin-top: 3rem;
+  padding: 1rem;
 }
 #protfolio .container .subtitle {
   text-align: center;
@@ -162,23 +182,24 @@ body {
 }
 
 @media (max-width: 768px) {
-  #header .navBar {
-    display: inline-block;
+  #header .container .navBar .toggle {
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top: 10px;
   }
-  #header .navBar ul {
+  #header .container .navBar .ulContainer {
+    margin-top: 3rem;
+    margin-left: -16rem;
     display: none;
   }
-  #header .navBar .toggle {
+  #header .container .navBar .ulContainer ul {
     display: block;
-    border: 1px solid white;
-    padding: 10px 15px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
   }
-  #header .navBar .toggle i {
-    color: white;
+  #header .container .navBar .ulContainer ul li {
+    margin-top: 1rem;
+  }
+  #header .container .navBar .active-ul {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
