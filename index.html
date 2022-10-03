@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="main.js" defer></script>
+    <title>Emma Graphic</title>
+</head>
+<body>
+    <section id="header">
+        <div class="navBar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">REMUSE</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+
+            <div class="toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="text">
+                <p>Hello, I'm</p>
+                <h1>Lawal Emmanuel</h1>
+                <p>Graphic Designer</p>
+            </div>
+        </div>
+
+        <div class="scrolldown">
+            <a href="#">
+                <div class="ballContainer">
+                    <div class="ball"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="protfolio">
+        <div class="container">
+            <div class="subtitle">Featured <span>Portfoilo</span></div>
+
+            <div class="tabLinks">
+                <div class="tab-link active-link" onclick="openTab('logo')">Logo</div>
+                <div class="tab-link" onclick="openTab('banner')">Banner</div>
+                <div class="tab-link" onclick="openTab('flyer')">Flyer</div>
+                <div class="tab-link" onclick="openTab('mockup')">Mockup</div>
+            </div>
+
+            <div class="tabContents">
+                <div class="tab-content active-content" id="logo">
+                    <img src="./asset/logo.jpeg" alt="">
+                    <img src="./asset/logo (2).jpeg" alt="">
+                    <img src="./asset/logo (3).jpeg" alt="">
+                    <img src="./asset/logo (4).jpeg" alt="">
+                </div>
+
+                <div class="tab-content" id="banner">
+                   <img src="./asset/Banner.jpeg" alt="">
+                   <img src="./asset/Banner (2).jpeg" alt="">
+                   <img src="./asset/Banner (3).jpeg" alt="">
+                   <img src="./asset/Banner (4).jpeg" alt="">
+                </div>
+
+                <div class="tab-content" id="flyer">
+                    <img src="./asset/flyer.jpeg" alt="">
+                    <img src="./asset/flyer (2).jpeg" alt="">
+                    <img src="./asset/flyer (3).jpeg" alt="">
+                    <img src="./asset/flyer (4).jpeg" alt="">
+                    <img src="./asset/flyer (5).jpeg" alt="">
+                    <img src="./asset/flyer (6).jpeg" alt="">
+                    <img src="./asset/flyer (7).jpeg" alt="">
+                    <img src="./asset/flyer (8).jpeg" alt="">
+                    <img src="./asset/flyer (9).jpeg" alt="">
+                </div>
+
+                <div class="tab-content" id="mockup">
+                   <img src="./asset/mockup.jpeg" alt="">
+                   <img src="./asset/mockup (2).jpeg" alt="">
+                   <img src="./asset/mockup (3).jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
