@@ -9,6 +9,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -75,6 +76,7 @@ body {
 }
 #header .active-container {
   background: white;
+  z-index: 1;
   position: fixed;
   width: 100%;
 }
@@ -167,8 +169,9 @@ body {
 #protfolio .container .tabContents .tab-content {
   display: none;
 }
-#protfolio .container .tabContents .tab-content img {
+#protfolio .container .tabContents .tab-content .img {
   width: 100%;
+  height: 50vw;
 }
 #protfolio .container .tabContents .active-content {
   display: grid;
@@ -179,6 +182,289 @@ body {
   -moz-transition: 0.5s ease-in;
   -ms-transition: 0.5s ease-in;
   -o-transition: 0.5s ease-in;
+}
+#protfolio .container #logo .img {
+  width: 100%;
+  background: url("../asset/logo.jpeg");
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #logo .img:nth-child(2) {
+  background: url("../asset/logo (2).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #logo .img:nth-child(3) {
+  background: url("../asset/logo (3).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #logo .img:nth-child(4) {
+  background: url("../asset/logo (4).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #logo .img:nth-child(5) {
+  background: url("../asset/mockup.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #logo .img:nth-child(6) {
+  background: url("../asset/mockup (2).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #logo .img:nth-child(7) {
+  background: url("../asset/mockup (3).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #banner .img:nth-child(1) {
+  background: url("../asset/Banner/WhatsApp Image 2022-10-04 at 11.29.55 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #banner .img:nth-child(2) {
+  background: url("../asset/Banner/WhatsApp Image 2022-10-04 at 11.29.58 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #banner .img:nth-child(3) {
+  background: url("../asset/Banner/WhatsApp Image 2022-10-04 at 11.29.58 PM (1).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #banner .img:nth-child(4) {
+  background: url("../asset/Banner/WhatsApp Image 2022-10-04 at 11.30.00 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #banner .img:nth-child(5) {
+  background: url("../asset/Banner/WhatsApp Image 2022-10-04 at 11.30.02 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #banner .img:nth-child(6) {
+  background: url("../asset/Banner/WhatsApp Image 2022-10-04 at 11.30.03 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #banner .img:nth-child(7) {
+  background: url("../asset/Banner/WhatsApp Image 2022-10-04 at 11.30.04 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #banner .img:nth-child(8) {
+  background: url("../asset/Banner/WhatsApp Image 2022-10-04 at 11.30.04 PM (1).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #banner .img:nth-child(9) {
+  background: url("../asset/Banner/WhatsApp Image 2022-10-04 at 11.30.05 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #flyer .img:nth-child(1) {
+  background: url("../asset/flyer/WhatsApp Image 2022-10-04 at 11.13.23 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #flyer .img:nth-child(2) {
+  background: url("../asset/flyer/WhatsApp Image 2022-10-04 at 11.13.25 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #flyer .img:nth-child(3) {
+  background: url("../asset/flyer/WhatsApp Image 2022-10-04 at 11.13.25 PM (1).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #flyer .img:nth-child(4) {
+  background: url("../asset/flyer/WhatsApp Image 2022-10-04 at 11.13.30 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #flyer .img:nth-child(5) {
+  background: url("../asset/flyer/WhatsApp Image 2022-10-04 at 11.13.39 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #flyer .img:nth-child(6) {
+  background: url("../asset/flyer/WhatsApp Image 2022-10-04 at 11.13.40 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #flyer .img:nth-child(7) {
+  background: url("../asset/flyer/WhatsApp Image 2022-10-04 at 11.13.41 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #flyer .img:nth-child(8) {
+  background: url("../asset/flyer/WhatsApp Image 2022-10-04 at 11.13.42 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #flyer .img:nth-child(9) {
+  background: url("../asset/flyer/WhatsApp Image 2022-10-04 at 11.13.42 PM (1).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #flyer .img:nth-child(1) {
+  background: url("../asset/flyer/WhatsApp Image 2022-10-04 at 11.13.49 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #mockup .img:nth-child(1) {
+  background: url("../asset/mockUp/WhatsApp Image 2022-10-04 at 10.58.40 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #mockup .img:nth-child(2) {
+  background: url("../asset/mockUp/WhatsApp Image 2022-10-04 at 10.58.40 PM (1).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #mockup .img:nth-child(3) {
+  background: url("../asset/mockUp/WhatsApp Image 2022-10-04 at 10.58.41 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #mockup .img:nth-child(4) {
+  background: url("../asset/mockUp/WhatsApp Image 2022-10-04 at 10.58.43 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #mockup .img:nth-child(5) {
+  background: url("../asset/mockUp/WhatsApp Image 2022-10-04 at 10.58.44 PM (1).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #mockup .img:nth-child(6) {
+  background: url("../asset/mockUp/WhatsApp Image 2022-10-04 at 10.58.43 PM (1).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #mockup .img:nth-child(7) {
+  background: url("../asset/mockUp/WhatsApp Image 2022-10-04 at 10.58.43 PM (3).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #mockup .img:nth-child(8) {
+  background: url("../asset/mockUp/WhatsApp Image 2022-10-04 at 10.58.42 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #mockup .img:nth-child(9) {
+  background: url("../asset/mockUp/WhatsApp Image 2022-10-04 at 10.58.41 PM (1).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#protfolio .container #mockup .img:nth-child(10) {
+  background: url("../asset/mockUp/WhatsApp Image 2022-10-04 at 10.58.45 PM.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#resume {
+  margin-top: 3rem;
+  padding: 2rem;
+}
+#resume .container .subtitle {
+  text-align: center;
+  font-family: var(--font_robot);
+  font-size: 25px;
+  color: white;
+}
+#resume .container .subtitle span {
+  font-weight: bolder;
+}
+#resume .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+#resume .container .row #fullContent .small-title {
+  color: white;
+  font-family: var(--font_robot);
+  font-size: 20px;
+  margin-left: 10px;
+}
+#resume .container .row #fullContent .content {
+  background: rgba(65, 65, 65, 0.8784313725);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#resume .container .row #fullContent .content .date {
+  display: flex;
+  color: rgb(138, 138, 138);
+  font-family: var(--font_robot);
+  font-size: 10px;
+}
+#resume .container .row #fullContent .content .date p {
+  margin-left: 2px;
+}
+#resume .container .row #fullContent .content .details {
+  margin-top: 1rem;
+}
+#resume .container .row #fullContent .content .details h2 {
+  font-family: var(--font_robot);
+  color: var(--subColor);
+  font-weight: 400;
+}
+#resume .container .row #fullContent .content .details p {
+  margin-top: 0.5rem;
+  color: #d3d3d3;
+  font-family: var(--montrserrat);
+  font-size: 13px;
+}
+#resume .container .row #fullContent .content .placeName {
+  margin-top: 1rem;
+  color: rgb(138, 138, 138);
+  font-family: var(--font_robot);
+  font-size: 12px;
 }
 
 @media (max-width: 768px) {
@@ -201,5 +487,11 @@ body {
   }
   #header .container .navBar .active-ul {
     display: block;
+  }
+  #resume .container .row {
+    display: block;
+  }
+  #resume .container .row .experience {
+    margin-top: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
