@@ -428,7 +428,7 @@ body {
   margin-left: 10px;
 }
 #resume .container .row #fullContent .content {
-  background: rgba(65, 65, 65, 0.8784313725);
+  background: #333333;
   margin: 10px;
   padding: 20px;
   border-radius: 10px;
@@ -467,6 +467,199 @@ body {
   font-size: 12px;
 }
 
+#about {
+  padding: 3rem;
+  margin-top: 3rem;
+}
+#about .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#about .container .leftSide img {
+  width: 100%;
+}
+#about .container .rightside {
+  margin-left: 2rem;
+}
+#about .container .rightside .subtitle {
+  text-align: left;
+  font-family: var(--font_robot);
+  font-size: 30px;
+  color: white;
+}
+#about .container .rightside .subtitle span {
+  font-weight: bolder;
+}
+#about .container .rightside .aboutdetails {
+  margin-top: 2rem;
+  font-family: var(--font_robot);
+  font-size: 18px;
+  color: #858383;
+}
+#about .container .rightside .aboutdetails p:nth-child(1) {
+  font-size: 18px;
+}
+#about .container .rightside .aboutdetails p {
+  font-size: 15px;
+  line-height: 30px;
+}
+#about .container .rightside .aboutdetails .button {
+  margin-top: 4rem;
+}
+#about .container .rightside .aboutdetails .button a {
+  font-size: 15px;
+  background: #F1CF56;
+  color: white;
+  text-decoration: none;
+  padding: 13px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#about .container .rightside .aboutdetails .button a:nth-child(2) {
+  margin-left: 1rem;
+  background: #6C757D;
+}
+
+#testimony {
+  margin-top: 3rem;
+  padding: 3rem;
+}
+#testimony .container .subtitle {
+  text-align: center;
+  font-family: var(--font_robot);
+  font-size: 25px;
+  color: white;
+}
+#testimony .container .subtitle span {
+  font-weight: bolder;
+}
+#testimony .container .testimonyDetails {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#testimony .container .testimonyDetails .testimoner {
+  margin: 10px;
+  padding: 20px;
+  background: #333333;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#testimony .container .testimonyDetails .testimoner .testImg img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+#testimony .container .testimonyDetails .testimoner .details {
+  margin-top: 0.5rem;
+  font-family: var(--montrserrat);
+  color: #6C757D;
+  font-size: 15px;
+}
+#testimony .container .testimonyDetails .testimoner .details p {
+  margin-bottom: 1rem;
+}
+#testimony .container .testimonyDetails .testimoner .details i {
+  font-size: 12px;
+}
+
+#contact {
+  margin-top: 3rem;
+  padding: 2rem;
+}
+#contact .container .subtitle {
+  text-align: center;
+  font-family: var(--font_robot);
+  font-size: 25px;
+  color: white;
+}
+#contact .container .subtitle span {
+  font-weight: bolder;
+}
+#contact .container .contactContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+}
+#contact .container .contactContainer .left {
+  width: 100%;
+}
+#contact .container .contactContainer .left sub {
+  font-size: 18px;
+  color: white;
+  font-family: var(--font_robot);
+}
+#contact .container .contactContainer .left form {
+  margin-top: 1rem;
+}
+#contact .container .contactContainer .left form :where(input, textarea) {
+  font-family: var(--montrserrat);
+  color: white;
+  font-weight: bold;
+  display: block;
+  width: 90%;
+  padding: 15px;
+  margin-top: 10px;
+  background: #333333;
+  outline: none;
+  resize: none;
+  border: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+#contact .container .contactContainer .left form button {
+  margin-top: 1rem;
+  padding: 10px;
+  background: #F1CF56;
+  border: 0;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  color: white;
+  font-family: var(--montrserrat);
+  cursor: pointer;
+}
+#contact .container .contactContainer .left form button:hover {
+  opacity: 0.8;
+}
+#contact .container .contactContainer .right sub {
+  font-size: 18px;
+  color: white;
+  font-family: var(--font_robot);
+}
+#contact .container .contactContainer .right ul {
+  margin-top: 1rem;
+}
+#contact .container .contactContainer .right ul li {
+  list-style: none;
+  color: #6C757D;
+  font-family: var(--font_robot);
+  margin-top: 10px;
+}
+#contact .container .contactContainer .right .map {
+  margin-top: 1rem;
+}
+#contact .container .contactContainer .right .map iframe {
+  height: 50vh;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   #header .container .navBar .toggle {
     display: block;
@@ -493,5 +686,24 @@ body {
   }
   #resume .container .row .experience {
     margin-top: 3rem;
+  }
+  #about .container {
+    display: block;
+  }
+  #about .container .rightside {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+  #contact .container .contactContainer {
+    display: block;
+  }
+  #contact .container .contactContainer .right {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 620px) {
+  #testimony .container .testimonyDetails {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
