@@ -3,6 +3,8 @@ const tabContent = document.getElementsByClassName("tab-content")
 const container = document.querySelector(".container")
 const ulContainer = document.querySelector(".ulContainer")
 const toggle = document.querySelector(".toggle")
+const image = document.querySelectorAll(".img img");
+const close = document.querySelector(".close")
 
 function openTab(tabName){
     for(links of tablinks){
@@ -28,4 +30,16 @@ function myscroll() {
 
 toggle.addEventListener("click", function() {
     ulContainer.classList.toggle("active-ul")
+})
+
+
+image.forEach(img => {
+    img.addEventListener("click", () =>{
+        document.querySelector(".model").style.display = "block";
+        document.querySelector(".model .img img").src = img.getAttribute("src");
+    })
+});
+
+close.addEventListener("click", () =>{
+    document.querySelector(".model").style.display = "none"
 })

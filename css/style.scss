@@ -203,279 +203,83 @@ body{
             }
 
             .active-content{
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
                 grid-gap: 10px;
                 transition: 0.5s ease-in;
                 -webkit-transition: 0.5s ease-in;
                 -moz-transition: 0.5s ease-in;
                 -ms-transition: 0.5s ease-in;
                 -o-transition: 0.5s ease-in;
+
+                .img{
+                    width: 350px;
+                    height: 238px;
+                    border: 2px solid white;
+                    cursor: pointer;
+                    overflow: hidden;
+                    
+                    img{
+                        width: 100%;
+                        height: 238px;
+                        transition: .2s linear;
+                        -webkit-transition: .2s linear;
+                        -moz-transition: .2s linear;
+                        -ms-transition: .2s linear;
+                        -o-transition: .2s linear;
+                    }
+
+                    img:hover{
+                        transform: scale(1.1);
+                        -webkit-transform: scale(1.1);
+                        -moz-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                        -o-transform: scale(1.1);
+                    }                   
+                }
+
+
             }
         }
 
-        #logo{
+        .model{
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            background: rgba(70, 69, 69, 0.712);
+
+            .close{
+                position: absolute;
+                color: white;
+                font-family: var(--montrserrat);
+                font-size: 20px;
+                right: 20px;
+                top: 20px;
+                cursor: pointer;
+            }
+
             .img{
-                width: 100%;
-                background: url("../asset/logo.jpeg");
-                height: 50vh;
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
+                width: 350px;
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+                -moz-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                -o-transform: translate(-50%,-50%);
 
-            .img:nth-child(2){
-                background: url("../asset/logo\ \(2\).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(3){
-                background: url("../asset/logo\ \(3\).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(4){
-                background: url("../asset/logo\ \(4\).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(5){
-                background: url("../asset/mockup.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(6){
-                background: url("../asset/mockup (2).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(7){
-                background: url("../asset/mockup\ \(3\).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-        }
-
-        #banner{
-            .img:nth-child(1){
-                background: url("../asset/Banner/WhatsApp\ Image\ 2022-10-04\ at\ 11.29.55\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(2){
-                background: url("../asset/Banner/WhatsApp\ Image\ 2022-10-04\ at\ 11.29.58\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(3){
-                background: url("../asset/Banner/WhatsApp\ Image\ 2022-10-04\ at\ 11.29.58\ PM\ \(1\).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(4){
-                background: url("../asset/Banner/WhatsApp\ Image\ 2022-10-04\ at\ 11.30.00\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(5){
-                background: url("../asset/Banner/WhatsApp\ Image\ 2022-10-04\ at\ 11.30.02\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(6){
-                background: url("../asset/Banner/WhatsApp\ Image\ 2022-10-04\ at\ 11.30.03\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(7){
-                background: url("../asset/Banner/WhatsApp\ Image\ 2022-10-04\ at\ 11.30.04\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(8){
-                background: url("../asset/Banner/WhatsApp\ Image\ 2022-10-04\ at\ 11.30.04\ PM\ \(1\).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(9){
-                background: url("../asset/Banner/WhatsApp\ Image\ 2022-10-04\ at\ 11.30.05\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
+                img{
+                    width: 100%;
+                }
             }
         }
-
-        #flyer{
-            .img:nth-child(1){
-                background: url("../asset/flyer/WhatsApp\ Image\ 2022-10-04\ at\ 11.13.23\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(2){
-                background: url("../asset/flyer/WhatsApp\ Image\ 2022-10-04\ at\ 11.13.25\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(3){
-                background: url("../asset/flyer/WhatsApp\ Image\ 2022-10-04\ at\ 11.13.25\ PM\ \(1\).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(4){
-                background: url("../asset/flyer/WhatsApp\ Image\ 2022-10-04\ at\ 11.13.30\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(5){
-                background: url("../asset/flyer/WhatsApp\ Image\ 2022-10-04\ at\ 11.13.39\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(6){
-                background: url("../asset/flyer/WhatsApp\ Image\ 2022-10-04\ at\ 11.13.40\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(7){
-                background: url("../asset/flyer/WhatsApp\ Image\ 2022-10-04\ at\ 11.13.41\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(8){
-                background: url("../asset/flyer/WhatsApp\ Image\ 2022-10-04\ at\ 11.13.42\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(9){
-                background: url("../asset/flyer/WhatsApp\ Image\ 2022-10-04\ at\ 11.13.42\ PM\ \(1\).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(1){
-                background: url("../asset/flyer/WhatsApp\ Image\ 2022-10-04\ at\ 11.13.49\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-        }
-
-        #mockup{
-            .img:nth-child(1){
-                background: url("../asset/mockUp/WhatsApp\ Image\ 2022-10-04\ at\ 10.58.40\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(2){
-                background: url("../asset/mockUp/WhatsApp\ Image\ 2022-10-04\ at\ 10.58.40\ PM\ \(1\).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(3){
-                background: url("../asset/mockUp/WhatsApp\ Image\ 2022-10-04\ at\ 10.58.41\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(4){
-                background: url("../asset/mockUp/WhatsApp\ Image\ 2022-10-04\ at\ 10.58.43\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(5){
-                background: url("../asset/mockUp/WhatsApp\ Image\ 2022-10-04\ at\ 10.58.44\ PM\ \(1\).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(6){
-                background: url("../asset/mockUp/WhatsApp\ Image\ 2022-10-04\ at\ 10.58.43\ PM\ \(1\).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(7){
-                background: url("../asset/mockUp/WhatsApp\ Image\ 2022-10-04\ at\ 10.58.43\ PM\ \(3\).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(8){
-                background: url("../asset/mockUp/WhatsApp\ Image\ 2022-10-04\ at\ 10.58.42\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(9){
-                background: url("../asset/mockUp/WhatsApp\ Image\ 2022-10-04\ at\ 10.58.41\ PM\ \(1\).jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .img:nth-child(10){
-                background: url("../asset/mockUp/WhatsApp\ Image\ 2022-10-04\ at\ 10.58.45\ PM.jpeg");
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-        }
+        
     }
 }
 
